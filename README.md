@@ -1,7 +1,7 @@
-# tvhome C06 — mon fork de tv-detox
+# tvhome — mon fork de tv-detox
 
-Un écran d'accueil Android TV minimal pour ma **TCL C06** (Google TV, Android 11, 1280 × 720,
-armeabi-v7a), et les outils de débloat qui vont avec.
+Un écran d'accueil Android TV minimal, pensé pour les télés modestes : **Android 9+**, 720p,
+1 Go de RAM, armeabi-v7a — testé sur une TCL C06 sous Google TV (Android 11).
 
 C'est un fork de [Ansub/tv-detox](https://github.com/Ansub/tv-detox) : l'upstream fournit le
 launcher `com.ansub.tvhome`, les scripts de débloat (`candidates.sh`, `check.sh`, `undo.sh`) et la
@@ -85,11 +85,11 @@ liste de retour, vérification du Chromecast après chaque vague).
 
 | | |
 |---|---|
-| TV | TCL C06, Android 11 (API 30), 1280 × 720 |
+| Testé sur | TCL C06, Android 11 (API 30), 1280 × 720 |
 | Accueil | `com.ansub.tvhome` (ce fork) |
 | Gardés volontairement | Chromecast (`mediashell`, `gms`), TF1+, SmartTube, Nuvio, Downloader |
 | Désactivés | 47 paquets |
-| Suspendus | 2 paquets `PERSISTENT` TCL |
+| Suspendus | 2 paquets `PERSISTENT` de la TV de test |
 
 ## Licence et crédits
 
