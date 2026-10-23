@@ -128,6 +128,26 @@ final class Strings {
     // The date above the clock: "Monday, 19 October" in English, the language's own order elsewhere.
     static String datePattern() {
         if ("en".equals(lang())) return "EEEE, d MMMM";
+        if ("fr".equals(lang())) return "EEEE d MMMM";
         return android.text.format.DateFormat.getBestDateTimePattern(Locale.getDefault(), "EEEEdMMMM");
+    }
+
+    // The few words the layout itself adds, which the tables above don't carry.
+    static String word(String en) {
+        String l = lang();
+        if ("fr".equals(l)) {
+            if ("Home".equals(en)) return "Accueil";
+            if ("My apps".equals(en)) return "MES APPLICATIONS";
+        } else if ("es".equals(l)) {
+            if ("Home".equals(en)) return "Inicio";
+            if ("My apps".equals(en)) return "MIS APLICACIONES";
+        } else if ("de".equals(l)) {
+            if ("Home".equals(en)) return "Start";
+            if ("My apps".equals(en)) return "MEINE APPS";
+        } else if ("it".equals(l)) {
+            if ("Home".equals(en)) return "Home";
+            if ("My apps".equals(en)) return "LE MIE APP";
+        }
+        return en;
     }
 }
